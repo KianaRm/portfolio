@@ -1,0 +1,203 @@
+ .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px  }
+
+ .about-title{
+    position: relative;
+ }
+
+ .about-title h1{
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
+ }
+
+ .about-section{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); 
+   gap: 180px;
+ }
+
+ .skills-container {
+   width:250px;
+  height:250px;
+  border:1px solid #CCC;
+  position: relative;
+
+  margin-right:10px;
+  border-radius:50%; 
+ }
+
+ .about-left{
+  position: relative;
+ }
+
+ .about-text{
+   margin: 5% 5%;
+   font-size: large;
+ }
+
+ .about-title img{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   z-index: -1;
+  }
+
+ .about-skills {
+  width: 330px;
+  height: 330px;
+  border: 1px solid #CCC;
+  position: relative; 
+  margin:auto;
+  border-radius: 50%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+ }
+
+ .skills-title{
+  position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+ .logo {
+   width:50px;
+  height:50px;
+  border-radius:50%;
+  position: absolute;
+  overflow:hidden;
+ 
+ }
+
+ .logo:nth-child(1) { 
+  top: 42%; 
+  left: 40%; 
+  transform: translate(-50%, -50%);
+  animation: circle 15s linear infinite;
+}
+.logo:nth-child(2) { 
+  top:40%; 
+  right: 40%; 
+  transform: translate(50%, 50%);
+  animation: circle 15s linear infinite;
+  animation-delay: -2.1s;
+
+}
+.logo:nth-child(3) { 
+  top: 40%; 
+  left: 40%;
+  bottom: 60%;
+  transform: translate(-50%, -50%);
+  animation: circle 15s linear infinite;
+  animation-delay: -4.2s;
+
+
+}
+.logo:nth-child(4) { 
+  bottom: 43%; 
+  left: 43%; 
+  transform: translate(-50%, 50%);
+  animation: circle 15s linear infinite;
+  animation-delay: -6.3s;
+
+
+}
+.logo:nth-child(5) { 
+  bottom: 40%; 
+  left: 40; 
+  transform: translate(-50%, 50%);
+  animation: circle 15s linear infinite;
+  animation-delay: -8.4s;
+
+}
+.logo:nth-child(6) { 
+  top: 40%; 
+  left: 40%; 
+  transform: translate(-50%, 50%);
+  animation: circle 15s linear infinite;
+  animation-delay: -10.5s;
+
+}
+.logo:nth-child(7) { 
+  top: 40%; 
+  left: 40%; 
+  transform: translate(-50%, -50%);
+  animation: circle 15s linear infinite;
+  animation-delay: -12.6s;
+
+
+}
+
+
+@keyframes circle{
+   0%{
+     transform:rotate(0deg)
+               translate(-165px)
+               rotate(0deg);
+   
+   }
+   100%{
+     transform:rotate(360deg)
+               translate(-165px)
+               rotate(-360deg);
+   }
+ }
+
+
+@media(max-width:1170px){
+  .about{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: fit-content;justify-content: center;
+    align-items: center;
+    padding: 0;
+    min-width: fit-content;
+  }
+  .about-title h1{
+    min-width: fit-content;
+    font-size: 50px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-title img{
+    width: 130px;
+    right: -20px;
+  }
+  .about-section{
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-text{
+    font-size: 30px;
+    line-height: 32px;
+   align-items: center;
+  }
+  
+  
+
+  .skills-title {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 1.5rem; 
+    font-weight: 600;
+  }
+
+}
+ 
