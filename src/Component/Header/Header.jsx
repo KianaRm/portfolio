@@ -1,7 +1,7 @@
 import React from "react"
 import './Header.css'
 import profile_img from '../../assets/unnamed.jpg'
-import CV from "../../assets/CVv2.pdf";
+import CV from "../assets/CVv2.pdf";
 
 
 
